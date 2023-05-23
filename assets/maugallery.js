@@ -119,7 +119,7 @@
         .attr("src", element.attr("src"));
       $(`#${lightboxId}`).modal("toggle");
     },
-    
+    // slide image précédente
     prevImage() {
       let activeImage = null;
       $("img.gallery-item").each(function() {
@@ -161,7 +161,7 @@
     
       $(".lightboxImage").attr("src", $(prev).attr("src"));
     },
-    
+    // slide image suivante
     nextImage() {
       var activeImage = null;
       $("img.gallery-item").each(function(index) {
@@ -240,6 +240,7 @@
         console.error(`Unknown tags position: ${position}`);
       }
     },
+    // Filtres catégories
     filterByTag() {
       if ($(this).hasClass("active-tag")) {
         return;
