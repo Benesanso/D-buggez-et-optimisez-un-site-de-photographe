@@ -13,7 +13,7 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Nina Carducci photographe">
 	<meta name="twitter:description" content="Portrait de Nina la photographe">
-	<meta name="twitter:image" content="https://benesanso.github.io/D-buggez-et-optimisez-un-site-de-photographe/assets/images/nina.webp">
+	<meta name="twitter:image" content="https://benesanso.github.io/D-buggez-et-optimisez-un-site-de-photographe/assets/images/nina.avif">
 	<!--meta référencement local-->
 	<meta name="address" content="68 avenue Alsace-Lorraine, 33200 Bordeaux">
 	<meta name="telephone" content="05 56 67 78 89">
@@ -26,6 +26,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/maugallery.js" defer></script>
+	<script  src="./assets/scripts.js" defer></script>
+
 	<title>Nina Carducci - Photographe Professionnelle</title>
 </head>
 
@@ -55,13 +60,26 @@
 		</nav>
 		<section id="carouselInner" class="carousel-inner">
 			<figure class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif" class="d-block w-100" alt="Homme en costard et saccoche sur passage piéton">
+				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif" class="d-block w-100" alt="Homme en costard et saccoche sur passage piéton" 
+				srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif 300w,
+				./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif 600w,
+				./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.avif 1200w" 
+				sizes="(max-width: 767px) 300px,(max-width: 1023px) 600px,1200px">
 			</figure>
 			<figure class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif" class="d-block w-100" alt="Public d'un Concert">
+				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif" class="d-block w-100" alt="Public d'un Concert"
+				srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif 300w,
+				./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif 600w,
+				./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif 1200w"  sizes="(max-width: 767px) 300px,
+				(max-width: 1023px) 600px,
+				1200px">
 			</figure>
 			<figure class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.avif" class="d-block w-100" alt="Mariés penchés qui s'embrassent">
+				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.avif" class="d-block w-100" alt="Mariés penchés qui s'embrassent" srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.avif 300w,
+				./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.avif 600w,
+				./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.avif 1200w"  sizes="(max-width: 767px) 300px,
+				(max-width: 1023px) 600px,
+				1200px">
 			</figure>
 		</section>
 		<nav>
@@ -78,7 +96,13 @@
 
 <article id="about">
 	<figure class="picture left">
-		<img src="./assets/images/nina.avif" alt="Portrait de Nina la photographe" loading="lazy">
+		<img src="./assets/images/nina.avif" loading="lazy" alt="Portrait de Nina la photographe"  
+		srcset="./assets/images/nina.avif 300w,
+		./assets/images/nina.avif 600w,
+		./assets/images/nina.avif 1200w"
+		sizes="(max-width: 767px) 300px,
+	   (max-width: 1023px) 600px,
+	   1200px">
 	</figure>
 	<section id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -93,16 +117,69 @@
 
 	<section class="container py-3">
 		<figure class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif" alt="Concert Aaron Paul" loading="lazy">
-			
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif" alt="Portrait homme en costard" loading="lazy">
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif" alt="Femme souriante lors d'une réunion" loading="lazy">
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif" alt="Mains des mariés" loading="lazy">
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif" alt="Portrait d'un homme face au soleil fronçant les sourcils" loading="lazy">
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif" alt="Mariés souriants avec un palmier en arrière plan" loading="lazy">
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.avif" alt="Portrait d'une jeune femme portant des lunettes" loading="lazy">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif" alt="Portrait du chanteur Austin Neill en plein Concert" loading="lazy">
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif" alt="Portrait d'une femme avec un grand sourire assise devant un ordinateur" loading="lazy">
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif" loading="lazy" alt="Concert Aaron Paul" 
+			srcset="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif 300w,
+			./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif 600w,
+			./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif 1200w"
+			sizes="(max-width: 767px) 300px,
+			(max-width: 1023px) 600px,
+			1200px">
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif" loading="lazy" alt="Portrait homme en costard" 
+			srcset="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif 300w,
+			./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif 600w,
+			./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.avif 1200w"
+			sizes="(max-width: 767px) 300px,
+			(max-width: 1023px) 600px,
+			1200px">
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif" loading="lazy" alt="Femme souriante lors d'une réunion"
+			srcset="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif 300w,
+			./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif 600w,
+			./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.avif 1200w"
+			sizes="(max-width: 767px) 300px,
+			(max-width: 1023px) 600px,
+			1200px">
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif" loading="lazy" alt="Mains des mariés" 
+			srcset="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif 300w,
+			./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif 600w,
+			./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.avif 1200w"
+			sizes="(max-width: 767px) 300px,
+			(max-width: 1023px) 600px,
+			1200px">
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif" loading="lazy" alt="Portrait d'un homme face au soleil fronçant les sourcils"
+			srcset="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif 300w,
+			./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif 600w,
+			./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.avif 1200w"
+			sizes="(max-width: 767px) 300px,
+			(max-width: 1023px) 600px,
+			1200px">
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif" loading="lazy" alt="Mariés souriants avec un palmier en arrière plan" 
+			srcset="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif 300w,
+			./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif 600w,
+			./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.avif 1200w"
+			sizes="(max-width: 767px) 300px,
+			(max-width: 1023px) 600px,
+			1200px">
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.avif" loading="lazy" alt="Portrait d'une jeune femme portant des lunettes"
+			srcset="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.avif 300w,
+			./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.avif 600w,
+			./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.avif 1200w"
+			sizes="(max-width: 767px) 300px,
+			(max-width: 1023px) 600px,
+			1200px">
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif" loading="lazy" alt="Portrait du chanteur Austin Neill en plein Concert"
+			srcset="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif 300w,
+			./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif 600w,
+			./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.avif 1200w"
+			sizes="(max-width: 767px) 300px,
+			(max-width: 1023px) 600px,
+			1200px">
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif" loading="lazy" alt="Portrait d'une femme avec un grand sourire assise devant un ordinateur"
+			srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif 300w,
+			./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif 600w,
+			./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.avif 1200w"
+			sizes="(max-width: 767px) 300px,
+			(max-width: 1023px) 600px,
+			1200px">
 		</figure>
 	</section>
 	<section class="quote">
@@ -182,14 +259,17 @@
 			<p>&copy; 2023 Nina Carducci - Photographe Professionnelle. Tous droits réservés.</p>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.avif" alt="Appareil photo en gros plan" loading="lazy">
+			<img src="./assets/images/camera.avif"  loading="lazy" alt="Appareil photo en gros plan"
+			srcset="./assets/images/camera.avif 300w,
+			./assets/images/camera.avif 600w,
+			./assets/images/camera.avif 1200w"
+			sizes="(max-width: 767px) 300px,
+	   		(max-width: 1023px) 600px,
+	  		1200px">
 		</div>
 	</section>
 </article>
 </footer>
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
+	
 </body>	
 </html>
