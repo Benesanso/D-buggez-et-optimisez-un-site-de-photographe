@@ -250,9 +250,11 @@ input[type="submit"] {
 .infos{
 	display: flex;
 	flex-direction: row;
-	gap: 50px;
+	gap: 110px;
 	width: 100%;
-	align-items: flex-start;
+	align-items:center;
+	margin-left: 90px;
+	margin-top: 50px;
 }
 a{
 	text-decoration: none;
