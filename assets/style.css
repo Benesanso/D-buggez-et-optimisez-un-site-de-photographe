@@ -248,7 +248,17 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
-
+#contact-container {
+	display: flex;
+	flex-direction: row;
+	gap: 80px;
+	width: 100%;
+	align-items: flex-start;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
