@@ -5,6 +5,7 @@
 	<meta name="description" content="Photographe - photographe Bordeaux - Saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos - Découvrez les services de Nina Carducci, photographe professionnelle spécialisée dans la capture de moments précieux et l'immortalisation des émotions. Réservez votre séance de photo dès maintenant.">
 	<meta charset="UTF-8">
 	<meta name="google-site-verification" content="lqlPwpFOPkajH1q43xkJnRuWxUCFEp35ZSE-XzSggds" />
+	
 	<!--meta réseaux sociaux Open Graph -->
 	<meta property="og:image" content="https://benesanso.github.io/D-buggez-et-optimisez-un-site-de-photographe/assets/images/nina.avif">
 	<meta property="og:title" content="Nina Carducci - photographe">
@@ -22,9 +23,32 @@
 	<meta name="telephone" content="05 56 67 78 89">
 	<meta name="business_hours" content="Mo-Fr 10:00-19:00">
 	<meta name="google-site-verification" content="bAhRMgQjKzNQ1gEmG0OXUZfLsscsm1j8zZjTDunuT3E">
-
+	<!-- Balisage JSON-LD Schema.org-->
+	<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "LocalBusiness",
+		  "name": "Nina Carducci - Photographe à Bordeaux",
+		  "image": "https://maximedrouault.github.io/Nina-CARDUCCI-Photographe/assets/images/portrait-nina-carducci-photographe.jpg",
+		  "telephone": "05 56 67 78 89",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200"
+		  },
+		  "openingHoursSpecification": {
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": {
+			  "@type": "DayOfWeek",
+			  "name": "Mo-Fr 10:00-19:00"
+			}
+		  },
+		  "url": "https://maximedrouault.github.io/Nina-CARDUCCI-Photographe/"
+		}
+	</script>
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrapMin.css">
-	<link rel="stylesheet" href="./assets/styleMin.css">
+	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"  rel="stylesheet">
@@ -198,37 +222,36 @@
 			<img src="./assets/images/camera.avif"  loading="lazy" alt="Appareil photo en gros plan" width="400" height="400">
 		</div>
 	</section>
-	<section class="container" id="contact-container">
+	<div class="infos">
 		<div>
 			<h2>Adresse</h2>
 			<p itemprop="address" itemtype="https://schema.org/PostalAddress">
 				<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span><br>
 				<span itemprop="postalCode">33200</span>
 				<span itemprop="addressLocality">Bordeaux</span>
-			</p>	
+			</p>
 		</div>
 		<div>
 			<h2>Contact</h2>
 			<p>Téléphone<br>
 				<span itemprop="telephone">05 56 67 78 89</span>
-			</p>	
+			</p>
 		</div>
 		<div>
 			<h2>Horaires</h2>
 			<p itemprop="openingHours" content="Mo, Tu, We, Th, Fr 10:00-19:00">
 				Du lundi au Vendredi <br>
 				de 10h à 19h
-			</p>	
+			</p>
 		</div>
 		<div>
 			<h2>Tarifs</h2>
 			<p >
 				<span itemprop="priceRange">50€ à 400€</span><br>
 				<span><a href="#services">Voir mes services</a> </span>
-			</p>	
-		</div>
-	</section>
-	<p>&copy; 2023 Nina Carducci - Photographe Professionnelle. Tous droits réservés.</p>
+			</p>
+		</div>			
+	</div>
 </article>
 </footer>
 	
