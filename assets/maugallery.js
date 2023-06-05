@@ -155,9 +155,7 @@
         }
       });
     // valeur de l'image -1 et % pour assurer une boucle circulaire à travers les images
-      prev =
-        imagesCollection[index - 1] ||
-        imagesCollection[(index + imagesCollection.length - 1) % imagesCollection.length];
+      prev = imagesCollection[index - 1] || imagesCollection[(index + imagesCollection.length - 1) % imagesCollection.length];
     
       $(".lightboxImage").attr("src", $(prev).attr("src"));
     },
